@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Courses</title>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" aria-current="page">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Page Intro -->
+        <section>
+            <h2>Our Courses</h2>
+            <p>Explore our academic catalog across multiple disciplines. Filter by department or degree level to find the right courses for your educational path.</p>
+        </section>
+
+        <!-- Course Search & Filters -->
+        <section aria-labelledby="search-filter-heading">
+            <h3 id="search-filter-heading">Search and Filter Courses</h3>
+            <form action="courses.html" method="get">
+                <div>
+                    <label for="course-search">Search Courses:</label>
+                    <input type="search" id="course-search" name="q" placeholder="Search by title or keyword...">
+                </div>
+
+                <div>
+                    <label for="department-select">Department:</label>
+                    <select id="department-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="cs">Computer Science & Information Technology</option>
+                        <option value="business">Business & Economics</option>
+                        <option value="arts">Arts & Design</option>
+                        <option value="humanities">Humanities & Languages</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="level-select">Course Level:</label>
+                    <select id="level-select" name="level">
+                        <option value="">All Levels</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="postgraduate">Postgraduate</option>
+                        <option value="doctoral">Doctoral</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Filter Courses</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Course Categories Links -->
+        <section aria-labelledby="categories-heading">
+            <h3 id="categories-heading">Browse by Category</h3>
+            <nav aria-label="Course Categories">
+                <ul>
+                    <li><a href="#cs-it">Computer Science &amp; IT</a></li>
+                    <li><a href="#business-admin">Business &amp; Administration</a></li>
+                    <li><a href="#arts-media">Arts &amp; Media</a></li>
+                    <li><a href="#languages">Languages &amp; Literature</a></li>
+                    <li><a href="#engineering-tech">Engineering &amp; Technology</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Course Catalog Grid / List -->
+        <section aria-labelledby="catalog-heading">
+            <h3 id="catalog-heading">Course Offerings</h3>
+
+            <!-- 1. Web Development -->
+            <article id="web-dev">
+                <img src="images/web-development.jpg" alt="A developer writing HTML and JavaScript code on a workstation setup">
+                <h4>Web Development</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Information Technology</p>
+                <p><strong>ECTS:</strong> 6 ECTS</p>
+                <p>Learn core client-side and server-side web technologies, web accessibility guidelines, structural standards, and responsive front-end fundamentals.</p>
+                <p><a href="courses/web-development.html">View Details</a></p>
+            </article>
+
+            <!-- 2. Database Systems -->
+            <article id="database-systems">
+                <img src="images/database-systems.jpg" alt="Relational data models and ER diagrams rendered on a monitor">
+                <h4>Database Systems</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Information Technology</p>
+                <p><strong>ECTS:</strong> 6 ECTS</p>
+                <p>Covers relational algebra, SQL querying, database normalization, relational engine architecture, and basic data modeling techniques.</p>
+                <p><a href="courses/database-systems.html">View Details</a></p>
+            </article>
+
+            <!-- 3. Data Structures & Algorithms -->
+            <article id="dsa">
+                <img src="images/data-structures.jpg" alt="Abstract graph structure and binary search tree diagram on a whiteboard">
+                <h4>Data Structures &amp; Algorithms</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Information Technology</p>
+                <p><strong>ECTS:</strong> 8 ECTS</p>
+                <p>Study foundational algorithmic paradigms, time and space complexity analysis, memory structures, stacks, queues, trees, and graph traversal.</p>
+                <p><a href="courses/data-structures-algorithms.html">View Details</a></p>
+            </article>
+
+            <!-- 4. Digital Marketing -->
+            <article id="digital-marketing">
+                <img src="images/digital-marketing.jpg" alt="A digital strategy workflow showing social analytics and conversion funnels">
+                <h4>Digital Marketing</h4>
+                <p><strong>Department:</strong> Business &amp; Economics</p>
+                <p><strong>ECTS:</strong> 5 ECTS</p>
+                <p>Explore search engine optimization strategies, content channels, targeted digital campaigns, customer retention, and web analytics tools.</p>
+                <p><a href="courses/digital-marketing.html">View Details</a></p>
+            </article>
+
+            <!-- 5. Graphic Design -->
+            <article id="graphic-design">
+                <img src="images/graphic-design.jpg" alt="Designer choosing color swatches and refining vector typography on a digital tablet">
+                <h4>Graphic Design</h4>
+                <p><strong>Department:</strong> Arts &amp; Design</p>
+                <p><strong>ECTS:</strong> 5 ECTS</p>
+                <p>Master design principles, composition, visual hierarchy, branding identity, typographic systems, and digital raster/vector software tools.</p>
+                <p><a href="courses/graphic-design.html">View Details</a></p>
+            </article>
+
+            <!-- 6. Software Engineering -->
+            <article id="software-engineering">
+                <img src="images/software-engineering.jpg" alt="Software development team participating in a sprint planning meeting around a Kanban board">
+                <h4>Software Engineering</h4>
+                <p><strong>Department:</strong> Computer Science &amp; Information Technology</p>
+                <p><strong>ECTS:</strong> 7 ECTS</p>
+                <p>Focuses on software lifecycles, Agile methodology, requirement engineering, automated testing, version control, and system architecture design.</p>
+                <p><a href="courses/software-engineering.html">View Details</a></p>
+            </article>
+
+            <!-- 7. Business Management -->
+            <article id="business-management">
+                <img src="images/business-management.jpg" alt="Business team reviewing quarterly financial forecasts and organizational strategy slides">
+                <h4>Business Management</h4>
+                <p><strong>Department:</strong> Business &amp; Economics</p>
+                <p><strong>ECTS:</strong> 6 ECTS</p>
+                <p>Provides a comprehensive overview of organizational operations, corporate leadership styles, strategic planning, human resources, and business finance.</p>
+                <p><a href="courses/business-management.html">View Details</a></p>
+            </article>
+
+            <!-- 8. English Language -->
+            <article id="english-language">
+                <img src="images/english-language.jpg" alt="Open textbook with highlighting pens and reference dictionaries on a wooden desk">
+                <h4>English Language</h4>
+                <p><strong>Department:</strong> Humanities &amp; Languages</p>
+                <p><strong>ECTS:</strong> 4 ECTS</p>
+                <p>Enhances academic writing techniques, critical analysis, scholarly presentation capabilities, advanced grammar, and professional prose communication.</p>
+                <p><a href="courses/english-language.html">View Details</a></p>
+            </article>
+
+            <!-- 9. Electrical Engineering -->
+            <article id="electrical-engineering">
+                <img src="images/electrical-engineering.jpg" alt="An engineering student testing printed circuit boards with an oscilloscope in a laboratory">
+                <h4>Electrical Engineering</h4>
+                <p><strong>Department:</strong> Engineering &amp; Technology</p>
+                <p><strong>ECTS:</strong> 7 ECTS</p>
+                <p>Introduction to circuit analysis, Ohm's law, AC/DC signals, semiconductor devices, power distribution systems, and analog microcircuitry.</p>
+                <p><a href="courses/electrical-engineering.html">View Details</a></p>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@campushub.edu">info@campushub.edu</a> | Phone: (555) 123-4567</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Events</title>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html" aria-current="page">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Page Introduction -->
+        <section>
+            <h2>Events</h2>
+            <p>Discover upcoming academic lectures, hands-on workshops, career fairs, and seminars happening across the campus.</p>
+        </section>
+
+        <!-- Events Search & Filter Section -->
+        <section aria-labelledby="filter-heading">
+            <h3 id="filter-heading">Search and Filter Events</h3>
+            <form action="events.html" method="get">
+                <div>
+                    <label for="event-search">Search Events:</label>
+                    <input type="search" id="event-search" name="q" placeholder="Search by title or keyword...">
+                </div>
+
+                <div>
+                    <label for="category-select">Category:</label>
+                    <select id="category-select" name="category">
+                        <option value="">All Categories</option>
+                        <option value="lectures">Guest Lectures</option>
+                        <option value="workshops">Workshops</option>
+                        <option value="career">Career &amp; Networking</option>
+                        <option value="seminars">Seminars</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Filter Events</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Category Links Section -->
+        <section aria-labelledby="categories-heading">
+            <h3 id="categories-heading">Event Categories</h3>
+            <nav aria-label="Event Categories">
+                <ul>
+                    <li><a href="#lectures">Guest Lectures</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#career-fairs">Career Fairs</a></li>
+                    <li><a href="#seminars">Seminars</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Events List Section -->
+        <section aria-labelledby="events-list-heading">
+            <h3 id="events-list-heading">Upcoming Events Schedule</h3>
+
+            <!-- 1. Guest Lecture: AI in Education -->
+            <article>
+                <img src="images/event-ai-education.jpg" alt="A guest speaker presenting artificial intelligence slides in a university auditorium">
+                <h4>Guest Lecture: AI in Education</h4>
+                <p><strong>Category:</strong> Guest Lecture</p>
+                <p><strong>Date:</strong> <time datetime="2026-04-15">15 Apr 2026</time> | <strong>Time:</strong> 10:00 AM - 12:00 PM</p>
+                <p><strong>Venue:</strong> Main Auditorium, Building A</p>
+                <p>An insightful presentation exploring how artificial intelligence and machine learning models are reshaping modern pedagogical methods, personalized learning, and academic research.</p>
+                <p><a href="events/ai-in-education.html">View Details</a></p>
+            </article>
+
+            <!-- 2. Workshop: Web Development -->
+            <article>
+                <img src="images/event-web-workshop.jpg" alt="Students gathered around laptops participating in a hands-on coding workshop">
+                <h4>Workshop: Web Development</h4>
+                <p><strong>Category:</strong> Workshop</p>
+                <p><strong>Date:</strong> <time datetime="2026-04-22">22 Apr 2026</time> | <strong>Time:</strong> 1:00 PM - 4:00 PM</p>
+                <p><strong>Venue:</strong> Computer Lab 3, Tech Hub</p>
+                <p>A hands-on coding session focusing on semantic HTML5 structure, modern CSS layout techniques, and responsive design practices for aspiring web developers.</p>
+                <p><a href="events/web-development-workshop.html">View Details</a></p>
+            </article>
+
+            <!-- 3. Career Fair 2025 -->
+            <article>
+                <img src="images/event-career-fair.jpg" alt="Students interacting with corporate recruiters at company booths during a career fair">
+                <h4>Career Fair 2025</h4>
+                <p><strong>Category:</strong> Career &amp; Networking</p>
+                <p><strong>Date:</strong> <time datetime="2026-04-30">30 Apr 2026</time> | <strong>Time:</strong> 9:00 AM - 3:00 PM</p>
+                <p><strong>Venue:</strong> University Student Union Center</p>
+                <p>Connect directly with top employers, technology firms, and industry leaders. Bring your resume, explore internships, and network for upcoming job openings.</p>
+                <p><a href="events/career-fair-2025.html">View Details</a></p>
+            </article>
+
+            <!-- 4. Seminar: Digital Transformation -->
+            <article>
+                <img src="images/event-digital-transformation.jpg" alt="A panel of experts discussing business digital transformation strategies on a stage">
+                <h4>Seminar: Digital Transformation</h4>
+                <p><strong>Category:</strong> Seminar</p>
+                <p><strong>Date:</strong> <time datetime="2026-05-12">12 May 2026</time> | <strong>Time:</strong> 2:00 PM - 5:00 PM</p>
+                <p><strong>Venue:</strong> Conference Hall B</p>
+                <p>Industry leaders discuss enterprise cloud migration, data-driven decision-making, and organizational adaptation in a rapidly evolving digital economy.</p>
+                <p><a href="events/digital-transformation.html">View Details</a></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@campushub.edu">info@campushub.edu</a> | Phone: (555) 123-4567</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

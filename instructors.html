@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Instructors</title>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html" aria-current="page">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Page Introduction -->
+        <section>
+            <h2>Our Instructors</h2>
+            <p>Meet our distinguished faculty members, industry experts, and academic researchers dedicated to guiding your education and professional development.</p>
+        </section>
+
+        <!-- Instructor Search & Filter Form -->
+        <section aria-labelledby="filter-heading">
+            <h3 id="filter-heading">Search Faculty Directory</h3>
+            <form action="instructors.html" method="get">
+                <div>
+                    <label for="instructor-search">Search by Name or Keyword:</label>
+                    <input type="search" id="instructor-search" name="q" placeholder="e.g., Sarah Jenkins, Algorithms">
+                </div>
+
+                <div>
+                    <label for="department-select">Department:</label>
+                    <select id="department-select" name="department">
+                        <option value="">All Departments</option>
+                        <option value="cs">Computer Science</option>
+                        <option value="business">Business &amp; Economics</option>
+                        <option value="arts">Arts &amp; Design</option>
+                        <option value="humanities">Humanities</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Filter Instructors</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Faculty Directory Section -->
+        <section aria-labelledby="directory-heading">
+            <h3 id="directory-heading">Faculty Directory</h3>
+
+            <!-- Instructor 1 -->
+            <article>
+                <img src="images/instructor-sarah-jenkins.jpg" alt="Portrait of Dr. Sarah Jenkins smiling in a campus office setting">
+                <h4>Dr. Sarah Jenkins</h4>
+                <p><strong>Title:</strong> Professor of Computer Science</p>
+                <p><strong>Department:</strong> Computer Science</p>
+                <p><strong>Expertise:</strong> Web Development, Frontend Architecture, Web Accessibility</p>
+                <p><a href="instructors/sarah-jenkins.html">View Profile</a></p>
+            </article>
+
+            <!-- Instructor 2 -->
+            <article>
+                <img src="images/instructor-alan-turing.jpg" alt="Portrait of Prof. Alan Turing standing in front of a lecture hall">
+                <h4>Prof. Alan Turing</h4>
+                <p><strong>Title:</strong> Professor of Computer Science</p>
+                <p><strong>Department:</strong> Computer Science</p>
+                <p><strong>Expertise:</strong> Database Systems, Algorithms, Artificial Intelligence</p>
+                <p><a href="instructors/alan-turing.html">View Profile</a></p>
+            </article>
+
+            <!-- Instructor 3 -->
+            <article>
+                <img src="images/instructor-elena-rostova.jpg" alt="Portrait of Prof. Elena Rostova reviewing marketing data charts">
+                <h4>Prof. Elena Rostova</h4>
+                <p><strong>Title:</strong> Associate Professor of Business</p>
+                <p><strong>Department:</strong> Business &amp; Economics</p>
+                <p><strong>Expertise:</strong> Digital Marketing, SEO Strategies, Analytics</p>
+                <p><a href="instructors/elena-rostova.html">View Profile</a></p>
+            </article>
+
+            <!-- Instructor 4 -->
+            <article>
+                <img src="images/instructor-marcus-vance.jpg" alt="Portrait of Prof. Marcus Vance holding a sketch pad in a design studio">
+                <h4>Prof. Marcus Vance</h4>
+                <p><strong>Title:</strong> Senior Lecturer in Arts &amp; Design</p>
+                <p><strong>Department:</strong> Arts &amp; Design</p>
+                <p><strong>Expertise:</strong> Graphic Design, Typography, UI/UX Design</p>
+                <p><a href="instructors/marcus-vance.html">View Profile</a></p>
+            </article>
+
+            <!-- Instructor 5 -->
+            <article>
+                <img src="images/instructor-priya-patel.jpg" alt="Portrait of Dr. Priya Patel in an electrical engineering laboratory">
+                <h4>Dr. Priya Patel</h4>
+                <p><strong>Title:</strong> Assistant Professor of Engineering</p>
+                <p><strong>Department:</strong> Engineering</p>
+                <p><strong>Expertise:</strong> Electrical Engineering, Circuit Analysis, Microcontrollers</p>
+                <p><a href="instructors/priya-patel.html">View Profile</a></p>
+            </article>
+
+            <!-- Instructor 6 -->
+            <article>
+                <img src="images/instructor-liam-oconnor.jpg" alt="Portrait of Dr. Liam O'Connor sitting at a desk surrounded by books">
+                <h4>Dr. Liam O'Connor</h4>
+                <p><strong>Title:</strong> Senior Lecturer in Humanities</p>
+                <p><strong>Department:</strong> Humanities</p>
+                <p><strong>Expertise:</strong> English Language, Academic Writing, Critical Theory</p>
+                <p><a href="instructors/liam-oconnor.html">View Profile</a></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@campushub.edu">info@campushub.edu</a> | Phone: (555) 123-4567</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

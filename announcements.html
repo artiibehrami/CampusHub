@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub - Announcements</title>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University Portal</p>
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html" aria-current="page">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Page Introduction -->
+        <section>
+            <h2>Announcements</h2>
+            <p>Stay informed with the latest updates, administrative notices, academic deadlines, and campus news.</p>
+        </section>
+
+        <!-- Announcements Search & Filter Section -->
+        <section aria-labelledby="filter-heading">
+            <h3 id="filter-heading">Search and Filter Announcements</h3>
+            <form action="announcements.html" method="get">
+                <div>
+                    <label for="announcement-search">Search Announcements:</label>
+                    <input type="search" id="announcement-search" name="q" placeholder="Search by title or keyword...">
+                </div>
+
+                <div>
+                    <label for="category-select">Category:</label>
+                    <select id="category-select" name="category">
+                        <option value="">All Categories</option>
+                        <option value="academic">Academic Affairs</option>
+                        <option value="campus">Campus Life</option>
+                        <option value="it">IT Services</option>
+                        <option value="financial">Financial Aid</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Filter Announcements</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Announcements List Section -->
+        <section aria-labelledby="announcements-list-heading">
+            <h3 id="announcements-list-heading">Latest Notices</h3>
+
+            <!-- 1. Registration for Summer Semester -->
+            <article>
+                <h4>Registration for Summer Semester</h4>
+                <p><strong>Category:</strong> Academic Affairs</p>
+                <p><strong>Date:</strong> <time datetime="2026-03-15">March 15, 2026</time></p>
+                <p>Online course registration and advising periods for the upcoming summer semester are now officially open. Please review your degree audit before submitting selections.</p>
+                <p><a href="announcements/summer-registration.html">Read Details</a></p>
+            </article>
+
+            <!-- 2. New Library Access Hours -->
+            <article>
+                <h4>New Library Access Hours</h4>
+                <p><strong>Category:</strong> Campus Life</p>
+                <p><strong>Date:</strong> <time datetime="2026-03-10">March 10, 2026</time></p>
+                <p>In response to student feedback during midterm examinations, the central campus library will extend weekend operating hours starting this Saturday.</p>
+                <p><a href="announcements/library-hours.html">Read Details</a></p>
+            </article>
+
+            <!-- 3. Scholarship Opportunities -->
+            <article>
+                <h4>Scholarship Opportunities</h4>
+                <p><strong>Category:</strong> Financial Aid</p>
+                <p><strong>Date:</strong> <time datetime="2026-03-05">March 5, 2026</time></p>
+                <p>Applications for merit-based and need-based institutional scholarships for the next academic year are now available on the student financial portal.</p>
+                <p><a href="announcements/scholarship-opportunities.html">Read Details</a></p>
+            </article>
+
+            <!-- 4. IT Maintenance Notice -->
+            <article>
+                <h4>IT Maintenance Notice</h4>
+                <p><strong>Category:</strong> IT Services</p>
+                <p><strong>Date:</strong> <time datetime="2026-02-28">February 28, 2026</time></p>
+                <p>Scheduled server maintenance will take place this Sunday from 01:00 AM to 05:00 AM. Student portal services and campus Wi-Fi might experience brief interruptions.</p>
+                <p><a href="announcements/it-maintenance.html">Read Details</a></p>
+            </article>
+
+            <!-- 5. Student Union Elections -->
+            <article>
+                <h4>Student Union Elections</h4>
+                <p><strong>Category:</strong> Campus Life</p>
+                <p><strong>Date:</strong> <time datetime="2026-02-20">February 20, 2026</time></p>
+                <p>Nominations for the student union executive board positions open next week. Interested candidates should submit their application packages to the student affairs office.</p>
+                <p><a href="announcements/student-union-elections.html">Read Details</a></p>
+            </article>
+
+            <!-- 6. Welcome Week 2025 -->
+            <article>
+                <h4>Welcome Week 2025</h4>
+                <p><strong>Category:</strong> Campus Life</p>
+                <p><strong>Date:</strong> <time datetime="2025-09-01">September 1, 2025</time></p>
+                <p>Recap of the annual orientation events, club showcases, and social activities that welcomed incoming freshmen to the CampusHub community last fall.</p>
+                <p><a href="announcements/welcome-week-2025.html">Read Details</a></p>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@campushub.edu">info@campushub.edu</a> | Phone: (555) 123-4567</p>
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="accessibility.html">Accessibility</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
